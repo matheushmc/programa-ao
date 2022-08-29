@@ -1,0 +1,131 @@
+<script>
+   /*
+    //PROBLEMA: Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+
+    //ENTRADA
+    const hemisferio = parseInt(prompt("Qual hemisfério tu ta? 0 para Sul e 1 para Norte"))
+    const mes = parseInt(prompt("Qual mês tu ta 0 para janeiro 1 fevereiro 2 para março 3 para abril 4 para maio 5 para junho 6 para julho 7 para agosto 8 para setembro 9 para outubro 10 para novembro 11 para dezembro"))
+    let hemi 
+    let estacao
+
+    //PROCESSAMENTO
+
+    switch (hemisferio) {
+        case 0 :
+            hemi = "Sul"
+            switch (mes) {
+                case 0 :
+                    estacao = "inverno"
+                    break
+                
+                case 1 :
+                    estacao = "inverno"
+                    break
+
+                case 2 :
+                    estacao = "inverno"
+                    break
+
+                case 3 :
+                    estacao = "Primavera"
+                    break
+
+                case 4 :
+                    estacao = "Primavera"
+                    break
+
+                case 5 :
+                    estacao = "Primavera"
+                    break
+
+                case 6 :
+                    estacao = "Verão"
+                    break
+                
+                case 7 :
+                    estacao = "Verão"
+                    break
+
+                case 8 :
+                    estacao = "Verão"
+                    break
+
+                case 9 :
+                    estacao = "Outono"
+                    break
+
+                case 10 :
+                    estacao = "Outono"
+                    break
+
+                case 11 :
+                    estacao = "Outono"
+                    break
+
+                default :
+                    estacao = "Ta zuando né meu fi"
+            }
+            break 
+
+        case 1 :
+            hemi = "Norte"
+            switch (mes) {
+                case 11 :
+                    estacao = "inverno"
+                    break
+                
+                case 0 :
+                    estacao = "inverno"
+                    break
+
+                case 1 :
+                    estacao = "inverno"
+                    break
+
+                case 2 :
+                    estacao = "Primavera"
+                    break
+
+                case 3 :
+                    estacao = "Primavera"
+                    break
+
+                case 4 :
+                    estacao = "Primavera"
+                    break
+
+                case 5 :
+                    estacao = "Verão"
+                    break
+                
+                case 6 :
+                    estacao = "Verão"
+                    break
+
+                case 7 :
+                    estacao = "Verão"
+                    break
+
+                case 8 :
+                    estacao = "Outono"
+                    break
+
+                case 9 :
+                    estacao = "Outono"
+                    break
+
+                case 10 :
+                    estacao = "Outono"
+                    break
+
+                default :
+                    estacao = "Ta zuando né meu fi"
+            }   
+    }
+    
+    //SAÍDA
+    document.write(`Você esta no hemisfério ${hemi} que esta no ${estacao}`)
+
+</script>

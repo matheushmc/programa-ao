@@ -1,0 +1,47 @@
+<script>
+    /*
+    //PROBLEMA: Faça um script que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+    - "Telefonou para a vítima?"
+    - "Esteve no local do crime?"
+    - "Mora perto da vítima?"
+    - "Devia para a vítima?"
+    - "Já trabalhou com a vítima?"
+    O script deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
+    */
+
+    //ENTRADA
+    const telefone = Number(prompt("Telefonou para a vítima?"))
+    const esteve = Number(prompt("Esteve no local do crime?"))
+    const mora = Number(prompt("Mora perto da vítima?"))
+    const devia = Number(prompt("Devia para a vítima?"))
+    const trabalho = Number(prompt("Já trabalhou com a vítima?"))
+    let resultado;
+    //PROCESSAMENTO
+    const calculoCrime = telefone + esteve + mora + devia + trabalho
+    switch (calculoCrime) {
+        case 0 :
+            resultado = "inocente"
+            break;
+        case 1 : 
+            resultado = "inocente"
+            break;
+        case 2 : 
+            resultado = "suspeito"
+            break;
+        case 3 :
+            resultado = "cumplice"  
+            break;
+        case 4 : 
+            resultado = "cumplice"
+            break
+        case 5 :
+            resultado = "assassino"
+            break
+    } 
+    //SAÍDA
+
+document.write(`voce é ${resultado}`)
+
+
+
+</script>
